@@ -1,0 +1,184 @@
+<!--
+  GrowthCore homepage
+  This file sets up the landing page structure for the studio brand.
+  Each section is designed to guide visitors toward learning more and contacting the business.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Document metadata: tells the browser the page language and character set. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Search engines and social previews use this description. -->
+  <meta name="description" content="GrowthCore helps ambitious brands grow with thoughtful digital marketing and creative strategy.">
+
+  <!-- The browser tab title shown in the browser window. -->
+  <title>GrowthCore | Digital Growth Studio</title>
+
+  <!-- Bootstrap is included for layout, styling, and responsive components. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts are loaded for the brand's typography. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main custom stylesheet for the design of the website. -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!--
+    Header / Navigation:
+    This is the shared top menu used across the site.
+    It helps users move between Home, About, Services, Work, and Contact.
+  -->
+  <nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+    <div class="container">
+      <!-- Brand name/logo link that returns to the homepage. -->
+      <a class="navbar-brand" href="index.html">GrowthCore<span>.</span></a>
+
+      <!-- Mobile menu toggle button for small screens. -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+      <!-- Navigation links inside the collapsible menu. -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Our Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          <!-- Primary action button in the navigation area. -->
+          <li class="nav-item ms-lg-3"><a class="button button-small" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!--
+      Hero section:
+      This is the first impression of the homepage.
+      It explains who the studio is and gives the main call-to-action.
+    -->
+    <section class="home-hero">
+      <div class="container hero-content" data-reveal>
+        <!-- Small label above the headline. -->
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Independent digital growth studio</p>
+
+        <!-- Main headline with emphasized text. -->
+        <h1>Make your next<br>chapter <em>count.</em></h1>
+
+        <!-- Supporting description for the agency. -->
+        <p class="hero-copy">We build clear strategies and memorable digital experiences that help good businesses grow.</p>
+
+        <!-- Two action links under the headline. -->
+        <div class="d-flex flex-wrap gap-3 align-items-center">
+          <a class="button" href="services.html">Explore our services <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="work.html">See selected work <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- Short statement beneath actions. -->
+        <div class="hero-note"><span class="hero-note-mark">✳</span> Strategy first. Creativity always.</div>
+      </div>
+
+      <!-- Decorative section image for the hero area. -->
+      <div class="hero-photo" role="img" aria-label="Sunlit creative studio with a desk and plants"></div>
+
+      <!-- Small page counter for the homepage banner. -->
+      <div class="hero-index">01 <span>/</span> 05</div>
+    </section>
+
+    <!--
+      Intro section:
+      This part explains the studio's philosophy and invites visitors to learn more.
+    -->
+    <section class="intro-section section-pad">
+      <div class="container row align-items-end g-5" data-reveal>
+        <div class="col-lg-5">
+          <p class="eyebrow">A little about us</p>
+          <h2>Good growth starts<br>with <em>good questions.</em></h2>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1">
+          <p class="large-copy">We are a creative digital marketing agency helping ambitious businesses find their voice, reach the right people, and turn attention into lasting momentum.</p>
+          <a class="text-link" href="about.html">Get to know us <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      Services preview section:
+      This shows the top three service categories and links each one to its detailed page section.
+    -->
+    <section class="services-preview section-pad">
+      <div class="container" data-reveal>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What we do</p>
+            <h2>Small team. <em>Big picture.</em></h2>
+          </div>
+          <a class="text-link" href="services.html">All services <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- Three service cards in a row. -->
+        <div class="row g-0 service-list">
+          <a class="col-md-4 service-preview" href="services.html#social">
+            <span class="service-number">01</span>
+            <h3>Social media</h3>
+            <p>Build a community that cares about what you do.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="col-md-4 service-preview" href="services.html#content">
+            <span class="service-number">02</span>
+            <h3>Content studio</h3>
+            <p>Make useful, distinctive ideas impossible to scroll past.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="col-md-4 service-preview" href="services.html#email">
+            <span class="service-number">03</span>
+            <h3>Email marketing</h3>
+            <p>Turn the people who know you into your biggest fans.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      Final call-to-action section:
+      This gives the visitor a direct path to contact the studio.
+    -->
+    <section class="home-cta section-pad">
+      <div class="container cta-inner" data-reveal>
+        <p class="eyebrow">Your next move</p>
+        <h2>Ready to grow<br><em>with intention?</em></h2>
+        <a class="button button-light" href="contact.html">Tell us what you're building <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!--
+    Footer:
+    This final section adds brand identity and copyright details.
+  -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="navbar-brand" href="index.html">GrowthCore<span>.</span></a>
+      <p>Good work, good people, steady growth.</p>
+      <p class="copyright">© <span data-year></span> GrowthCore Studio</p>
+    </div>
+  </footer>
+
+  <!-- Load Bootstrap JavaScript for responsive navigation behavior. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom site JavaScript for dynamic features like the current year. -->
+  <script src="script.js"></script>
+</body>
+</html>
